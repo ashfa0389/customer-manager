@@ -1,0 +1,7 @@
+# Nobody can open these files directly from the browser
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Deny from all
+</IfModule>
